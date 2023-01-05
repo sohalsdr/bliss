@@ -4,7 +4,7 @@ barf is an extremely minimal blog generator.
 
 The entire build script is less than 100 lines of shell.
 
-It could *almost* be called "suckless", but probably isnt.
+It could *almost* be called "suckless", but probably isn't.
 
 (barf is a modified/forked version of Karl Bartel's fantastic [blog.sh](https://github.com/karlb/karl.berlin). Be sure to check it out since my version does things slightly different.)
 
@@ -14,12 +14,16 @@ It could *almost* be called "suckless", but probably isnt.
 >
 > Blogs Are Really Fun
 
+---
+
 ## Core Features
 
 - Extremely portable
 - Automatic, **valid** RSS generation
 - Handles both blog posts and normal pages
 - No front matter or templating, just create markdown files
+
+---
 
 ## Requirements
 
@@ -28,9 +32,13 @@ It could *almost* be called "suckless", but probably isnt.
 - entr (optonal)
 - standard UNIX tools
 
+---
+
 ## Basic Setup
 
 Clone this repo and navigate inside it. Edit the "header.html" and "footer.html" files with your own information, navigation, etc. 
+
+Be sure to edit the **RSS meta url** or else your feed won't validate!
 
 Then, clone and build my patched version of smu:
 
@@ -50,10 +58,16 @@ Your blog content will be in the `build` directory.
 
 Now you can delete the dummy posts/pages and start making your own!
 
+Media (such as images, videos) are placed in the "public" folder and carried over to the "build" folder via rsync. You can easily remove this altogether inside the main `barf` script if you plan to store media elsewhere (or not use any at all).
+
+---
+
 ## Projects Goals
 
 - The core focus should be to **reduce** the code of this project, not increase it. Overall scope needs to remain small.
 - Major tweaks/add-ons should be run by individuals via forks/patches - not put into the barf base
+
+---
 
 ## FAQs
 

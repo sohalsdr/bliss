@@ -1,0 +1,12 @@
+image: debian/stable
+oauth: pages.sr.ht/PAGES:RW
+environment:
+  site: barf.bt.ht
+sources:
+  - https://git.sr.ht/~bt/barf
+tasks:
+- package: |
+    cd barf/build
+    tar -cvz . > ../../site.tar.gz
+- upload: |
+    acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tar.gz
