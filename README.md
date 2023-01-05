@@ -8,6 +8,8 @@ It could *almost* be called "suckless", but probably isn't.
 
 (barf is a modified/forked version of Karl Bartel's fantastic [blog.sh](https://github.com/karlb/karl.berlin). Be sure to check it out since my version does things slightly different.)
 
+You can see a [live demo here](https://barf.bt.ht)
+
 ## Why 'barf'?
 
 > **barf**
