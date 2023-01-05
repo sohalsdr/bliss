@@ -10,4 +10,8 @@ You can learn more by reading the [official README](https://git.sr.ht/~bt/barf).
 
 You can also view the generated [Atom feed here](/atom.xml)
 
+> **barf**
+>
+> Blogs Are Really Fun
+
 ---
