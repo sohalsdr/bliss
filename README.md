@@ -72,7 +72,7 @@ Most likely not. I'm happy with how things are currently. If you want to add som
 
 Of course, any patches that can help *reduce* the project's footprint or even speed things up are more than welcome!
 
-### Can other Markdown parsers?
+### Can I use other Markdown parsers?
 
 Of course! Simply edit the main `barf` script and swap out `smu` with something else. I wouldn't advise doing this if you already have pre-existing content based-off `smu`, since this could break some of your pages.
 
