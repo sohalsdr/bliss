@@ -71,6 +71,13 @@ Media (such as images, videos) are placed in the "public" folder and carried ove
 
 ---
 
+## Submitting Patches
+
+Please use the official [mailing list](https://lists.sr.ht/~bt/barf) to submit
+your patches or bug fixes. Thanks!
+
+---
+
 ## FAQs
 
 ### How do I test locally?
