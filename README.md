@@ -64,6 +64,21 @@ Media (such as images, videos) are placed in the "public" folder and carried ove
 
 ---
 
+## Post Structure
+
+The first line of any markdown file inside your `posts` directory should start
+with a h1 heading, then a line break, then the date in `YYYY-MM-DD` format.
+Like so:
+
+```
+# This is the Post Title
+
+2023-01-05
+```
+
+Changing this structure or date format will break things or require you to edit
+the `barf` script accordingly.
+
 ## Projects Goals
 
 - The core focus should be to **reduce** the code of this project, not increase it. Overall scope needs to remain small.

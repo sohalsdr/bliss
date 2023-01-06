@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>barf</title>
 	<link href="https://barf.bt.ht/atom.xml" rel="self" />
-	<updated>2023-01-05T10:06:01Z</updated>
+	<updated>2023-01-06T14:45:05Z</updated>
 	<author>
 		<name>Bradley Taunt</name>
 	</author>
@@ -10,7 +10,7 @@
 	<entry>
 		<title>Markdown Examples in barf</title>
 		<content type="html">&lt;h1&gt;Markdown Examples in barf&lt;/h1&gt;
-&lt;p&gt;2022-01-05&lt;/p&gt;
+&lt;p&gt;2023-01-05&lt;/p&gt;
 &lt;p&gt;This following was lifted from &lt;a href=&quot;https://github.com/karlb/smu&quot;&gt;https://github.com/karlb/smu&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;&lt;code&gt;smu&lt;/code&gt; Syntax&lt;/h1&gt;
 &lt;p&gt;smu was started as a rewrite of
@@ -244,7 +244,7 @@ behaviour, use the &lt;code&gt;-n&lt;/code&gt; flag when executing smu to stricl
 tags.&lt;/p&gt;</content>
 		<link href="https://barf.bt.ht/markdown-examples"/>
 		<id>https://barf.bt.ht/markdown-examples</id>
-		<updated>2022-01-05T00:00:00Z</updated>
-		<published>2022-01-05T00:00:00Z</published>
+		<updated>2023-01-05T00:00:00Z</updated>
+		<published>2023-01-05T00:00:00Z</published>
 	</entry>
 </feed>
