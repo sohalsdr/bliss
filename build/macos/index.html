@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>barf</title>
+	<title>Running `barf` on MacOS</title>
 	<link href="https://barf.bt.ht/atom.xml" type="application/atom+xml" rel="alternate" title="Atom feed for blog posts" />
 	<style>
 		* {
@@ -107,18 +107,25 @@
 </nav>
 
 <main>
-<h1>barf</h1>
-<p><strong>barf is an extremely minimal blog generator.</strong></p>
-<p>The entire build script is less than 100 lines of shell.</p>
-<p>It could almost be called "suckless", but probably isn't. It was created for those focused on writing, not tinkering.</p>
-<p>You can learn more by reading the <a href="https://git.sr.ht/~bt/barf">official README</a>.</p>
-<p>You can also view the generated <a href="/atom.xml">Atom feed here</a></p>
-<blockquote><p><strong>barf</strong></p>
-<p>Blogs Are Really Fun</p>
-</blockquote>
-<hr />
-<span class='created'>2023-01-18 &mdash; <a href="macos/">Running `barf` on MacOS</a></span>
-<span class='created'>2023-01-05 &mdash; <a href="markdown-examples/">Markdown Examples in barf</a></span>
+<h1>Running <code>barf</code> on MacOS</h1>
+<p>2023-01-18</p>
+<p>The <code>barf</code> project was built on Linux and was catered towards Linux users. The core of the project will remain focused on Linux/GNU tools, but that doesn't mean MacOS needs to be left out in the cold.</p>
+<p>There are some very minor changes you'll need to make in the main <code>barf</code> script if you plan to run it on MacOS.</p>
+<h2>Download Packages</h2>
+<p>This walkthrough assumes that you already have <a href="https://brew.sh/">homebrew</a> installed on your machine.</p>
+<p>You will need to install the GNU versions of both <code>date</code> and <code>sed</code> in order to avoid breaking things when <code>barf</code> tries to build.</p>
+<pre><code>brew install coreutils
+brew install gnu-sed
+</code></pre>
+<h2>The Script Tweaks</h2>
+<p>Now open the main <code>barf</code> file in your project and replace all instances of <code>sed</code> with <code>gsed</code>.</p>
+<p>Then change the following variable:</p>
+<pre><code>published_date=$(date -d $basic_date +%FT%TZ)
+</code></pre>
+<p>to this:</p>
+<pre><code>published_date=$(gdate -d $basic_date +%FT%TZ)
+</code></pre>
+<p>After that everything should work perfectly fine. There is probably a cleaner way to do this, but I like to keep things simple.</p>
 <footer role="contentinfo">
     <span><a href="#">↑ Back to Top</a></span><br><br>
     <small>

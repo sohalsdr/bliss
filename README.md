@@ -93,6 +93,12 @@ your patches or bug fixes. Thanks!
 
 ---
 
+## Running on MacOS
+
+Please refer to the [main tutorial on setting up barf on MacOS](https://barf.bt.ht/macos)
+
+---
+
 ## FAQs
 
 ### How do I test locally?

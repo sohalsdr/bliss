@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>barf</title>
 	<link href="https://barf.bt.ht/atom.xml" rel="self" />
-	<updated>2023-01-06T14:45:05Z</updated>
+	<updated>2023-01-18T10:34:50Z</updated>
 	<author>
-		<name>Bradley Taunt</name>
+		<name></name>
 	</author>
 	<id>https://barf.bt.ht,2023-01-04:default-atom-feed/</id>
 	<entry>
@@ -246,5 +246,31 @@ tags.&lt;/p&gt;</content>
 		<id>https://barf.bt.ht/markdown-examples</id>
 		<updated>2023-01-05T00:00:00Z</updated>
 		<published>2023-01-05T00:00:00Z</published>
+	</entry>
+	<entry>
+		<title>Running `barf` on MacOS</title>
+		<content type="html">&lt;h1&gt;Running &lt;code&gt;barf&lt;/code&gt; on MacOS&lt;/h1&gt;
+&lt;p&gt;2023-01-18&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;barf&lt;/code&gt; project was built on Linux and was catered towards Linux users. The core of the project will remain focused on Linux/GNU tools, but that doesn&#39;t mean MacOS needs to be left out in the cold.&lt;/p&gt;
+&lt;p&gt;There are some very minor changes you&#39;ll need to make in the main &lt;code&gt;barf&lt;/code&gt; script if you plan to run it on MacOS.&lt;/p&gt;
+&lt;h2&gt;Download Packages&lt;/h2&gt;
+&lt;p&gt;This walkthrough assumes that you already have &lt;a href=&quot;https://brew.sh/&quot;&gt;homebrew&lt;/a&gt; installed on your machine.&lt;/p&gt;
+&lt;p&gt;You will need to install the GNU versions of both &lt;code&gt;date&lt;/code&gt; and &lt;code&gt;sed&lt;/code&gt; in order to avoid breaking things when &lt;code&gt;barf&lt;/code&gt; tries to build.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;brew install coreutils
+brew install gnu-sed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;The Script Tweaks&lt;/h2&gt;
+&lt;p&gt;Now open the main &lt;code&gt;barf&lt;/code&gt; file in your project and replace all instances of &lt;code&gt;sed&lt;/code&gt; with &lt;code&gt;gsed&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Then change the following variable:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;published_date=$(date -d $basic_date +%FT%TZ)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;published_date=$(gdate -d $basic_date +%FT%TZ)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After that everything should work perfectly fine. There is probably a cleaner way to do this, but I like to keep things simple.&lt;/p&gt;</content>
+		<link href="https://barf.bt.ht/macos"/>
+		<id>https://barf.bt.ht/macos</id>
+		<updated>2023-01-18T00:00:00Z</updated>
+		<published>2023-01-18T00:00:00Z</published>
 	</entry>
 </feed>
