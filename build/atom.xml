@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>barf</title>
 	<link href="https://barf.bt.ht/atom.xml" rel="self" />
-	<updated>2023-01-18T10:34:50Z</updated>
+	<updated>2023-03-07T11:14:15Z</updated>
 	<author>
-		<name></name>
+		<name>Bradley Taunt</name>
 	</author>
 	<id>https://barf.bt.ht,2023-01-04:default-atom-feed/</id>
 	<entry>
@@ -272,5 +272,23 @@ brew install gnu-sed
 		<id>https://barf.bt.ht/macos</id>
 		<updated>2023-01-18T00:00:00Z</updated>
 		<published>2023-01-18T00:00:00Z</published>
+	</entry>
+	<entry>
+		<title>Supporting Basic Dark Mode</title>
+		<content type="html">&lt;h1&gt;Supporting Basic Dark Mode&lt;/h1&gt;
+&lt;p&gt;2023-03-07&lt;/p&gt;
+&lt;p&gt;The default &lt;code&gt;barf&lt;/code&gt; site generator now supports basic dark mode functionality. This has been achieved by including the standard &lt;code&gt;color-scheme&lt;/code&gt; meta tag in the core &lt;code&gt;header.html&lt;/code&gt; file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;meta name=&amp;quot;color-scheme&amp;quot; content=&amp;quot;dark light&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This change also ships with some minor updates to the default &lt;code&gt;blockquote&lt;/code&gt; design. You can see an example below:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;This is a really &lt;em&gt;cool&lt;/em&gt; blockquote&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Minor Caveat&lt;/h2&gt;
+&lt;p&gt;Unfortunately, Safari still has minor &lt;code&gt;ahref&lt;/code&gt; / link color issue when defaulting to browser dark mode. If this is a problem for your own build of &lt;code&gt;barf&lt;/code&gt;, take a look at a &lt;a href=&quot;https://bt.ht/safari-default-dark-mode/&quot;&gt;solution I wrote about here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Personally, I can&#39;t be bothered to add that extra code to this project. The Safari team needs to get their shit together and fix such a simple bug. Plus, you shouldn&#39;t be using Safari anyway - it&#39;s proprietary garbage.&lt;/p&gt;</content>
+		<link href="https://barf.bt.ht/dark-mode"/>
+		<id>https://barf.bt.ht/dark-mode</id>
+		<updated>2023-03-07T00:00:00Z</updated>
+		<published>2023-03-07T00:00:00Z</published>
 	</entry>
 </feed>
