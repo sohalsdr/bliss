@@ -101,6 +101,13 @@
 			margin: 2rem 0;
 			padding: 1rem 15px;
 		}
+		@supports (color-scheme: dark light) {
+			@media screen and (prefers-color-scheme: dark) {
+				a:link {color: #9e9eff;}
+				a:visited {color: #d0adf0;}
+				a:active {color: red;}
+			}
+		}
 	</style>
 </head>
 
