@@ -50,7 +50,7 @@ Your blog content will be in the `build` directory.
 
 Now you can delete the dummy posts/pages and start making your own!
 
-Media (such as images, videos) are placed in the "public" folder and carried over to the "build" folder via rsync. You can easily remove this altogether inside the main `bliss` script if you plan to store media elsewhere (or not use any at all).
+Media (such as images, videos) are placed in the `public` folder and carried over to the "build" folder via rsync. You can easily remove this altogether inside the main `bliss` script if you plan to store media elsewhere (or not use any at all).
 
 ---
 
