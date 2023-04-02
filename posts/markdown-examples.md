@@ -2,7 +2,7 @@
 
 2023-04-02
 
-This following was lifted from [https://github.com/karlb/smu](https://github.com/karlb/smu)
+The following was lifted from [https://github.com/karlb/smu](https://github.com/karlb/smu)
 
 `smu` Syntax
 ============
