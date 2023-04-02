@@ -56,8 +56,7 @@ Media (such as images, videos) are placed in the `public` folder and carried ove
 
 ## Post Structure
 
-The first line of any markdown file inside your `posts` directory should start
-with a h1 heading, then a line break, then the date in `YYYY-MM-DD` format.
+The first line of any markdown file inside your `posts` directory should start with a h1 heading, then a line break, then the date in `YYYY-MM-DD` format.
 Like so:
 
 ```
@@ -66,8 +65,7 @@ Like so:
 2023-01-05
 ```
 
-Changing this structure or date format will break things or require you to edit
-the `bliss` script accordingly.
+Changing this structure or date format will break things or require you to edit the `bliss` script accordingly.
 
 ---
 
@@ -81,6 +79,8 @@ Inside your project directory run:
 make watch
 cd build && python3 -m http.server 3003
 ```
+
+The VSCode [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) is also a useful tool for previewing pages.
 
 ### Can I use other Markdown parsers?
 
