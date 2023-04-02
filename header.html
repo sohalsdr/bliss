@@ -1,121 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<!-- Defines the character set to be used-->
 	<meta charset="utf-8">
+
+	<!-- Modifies the viewport to render correctly on mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="color-scheme" content="dark light">
-	<link rel="icon" href="data:,">
+
+	<!-- Indicates that the page supports light and dark colorschemes, and that light is preferred -->
+	<meta name="color-scheme" content="light dark">
+
+	<!-- MODIFY THIS -->
+	<!-- Defines the page favicon -->
+	<link rel="icon" type="image/x-icon" href="/bliss/public/favicon/favicon.ico">
+
+	<!-- Page Title -->
 	<title>{{TITLE}}</title>
+
+	<!-- Link for the Atom Feed -->
 	<link href="https://sohalsdr.github.io/bliss/atom.xml" type="application/atom+xml" rel="alternate" title="Atom feed for blog posts" />
-	<style>
-		* {
-			box-sizing: border-box;
-		}
-		body {
-			font-family: sans-serif;
-			line-height: 1.45;
-			margin: 0 auto;
-			max-width: 45rem;
-			padding: 0 15px;
-		}
-		hr {
-			background-color: grey;
-			border: 0;
-			height: 1px;
-			margin: 2rem 0;
-		}
-		nav {
-			margin: 2rem 0 0;
-		}
-		main {
-			hyphens: auto;
-		}
-		main p {
-			margin: 1rem;
-		}
-		h1,h2,h3,h4 {
-			margin: 2rem 0 0;
-		}
-		h1 {
-			margin-bottom: 0.5rem;
-		}
-		h1 + p {
-			margin: 0 0 1rem;
-		}
-		span.created {
-			display: block;
-			margin: 4px 15px;
-		}
-		img {
-			/*border: 1px solid lightgrey;*/
-			display: block;
-    		margin-left: auto;
-    		margin-right: auto;
-			height: auto;
-			max-width: 100%;
-			width: auto;
-		}
-		blockquote {
-			border: 1px solid;
-			border-left: 6px solid;
-			margin: 2rem 0;
-			padding: 10px;
-		}
-		blockquote p {
-			margin: 0;
-		}
-		figure {
-			margin: 2rem 0;
-		}
-		figcaption {
-			color: slategrey;
-		}
-		code {
-			border: 1px solid;
-			padding: 0.1rem 0.3rem;
-			tab-size: 4;
-		}
-		pre {
-			border: 1px solid;
-		}
-		pre code {
-			border: 0;
-			display: block;
-			overflow-x: auto;
-			padding: 0.3rem 0.6rem;
-		}
-		table {
-			border-collapse: collapse;
-			margin: 2rem 0;
-			text-align: left;
-			width: 100%;
-		}
-		tr {
-			border-bottom: 1px solid lightgrey;
-		}
-		tr:nth-of-type(odd) td {
-			background-color: #f8f8f8;
-		}
-		th,td {
-			padding: 6px;
-		}
-		footer {
-			border-top: 1px dashed grey;
-			margin: 2rem 0;
-			padding: 1rem 15px;
-		}
-		@supports (color-scheme: dark light) {
-			@media screen and (prefers-color-scheme: dark) {
-				a:link {color: #9e9eff;}
-				a:visited {color: #d0adf0;}
-				a:active {color: red;}
-			}
-		}
-	</style>
+	
+	<!-- Imports stylesheet -->
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <nav>
 	<!-- EDIT THESE! -->
+	<!-- Navigation links that make up the navbar -->
 	<a href="/bliss/">Home</a><span> | </span><a href="/bliss/about">About</a><span> | </span><a href="https://github.com/sohalsdr/bliss">Source Code</a>
 </nav>
 

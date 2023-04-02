@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>bliss</title>
 	<link href="https://sohalsdr.github.io/bliss/atom.xml" rel="self" />
-	<updated>2023-04-02T15:03:04Z</updated>
+	<updated>2023-04-02T15:45:00Z</updated>
 	<author>
 		<name>sohalsdr</name>
 	</author>
@@ -251,7 +251,7 @@ tags.&lt;/p&gt;</content>
 		<title>My Dog, Alfie</title>
 		<content type="html">&lt;h1&gt;My Dog, Alfie&lt;/h1&gt;
 &lt;p&gt;2023-04-02&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../public/alfie.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../public/images/alfie.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;This is an example blog post, solely created as an excuse to display this image of my dog Alfie, and so that there&#39;s something in &lt;code&gt;public&lt;/code&gt; and &lt;code&gt;rsync&lt;/code&gt; doesn&#39;t complain about the folder not existing when building the example site.&lt;/p&gt;
 &lt;h3&gt;Why does the image look funny?&lt;/h3&gt;
 &lt;p&gt;The image is &lt;a href=&quot;https://en.wikipedia.org/wiki/Dither&quot;&gt;dithered&lt;/a&gt; using Bayer Ordered Dithering. This creates a pretty distinct &quot;cross-hatched&quot; look, and more importantly cuts image size down massively to make pages more responsive. &lt;a href=&quot;https://ditherit.com/&quot;&gt;Dither it!&lt;/a&gt; is a great tool to quickly dither images online.&lt;/p&gt;</content>
