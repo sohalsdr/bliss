@@ -1,5 +1,5 @@
 build:
-	./barf
+	./bliss
 	rsync -r public/ build/public
 
 clean:
