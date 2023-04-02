@@ -1,17 +1,11 @@
-# barf
+# bliss
 
-**barf is an extremely minimal blog generator.**
+**Bl**og **i**t **s**imple, **s**tupid!
 
-The entire build script is less than 100 lines of shell.
+`bliss` is a moderately minimal blog generator, with a build script below 100 lines of shell. It's forked from Bradley Taunt's [barf](https://git.sr.ht/~bt/barf), and keeps things mostly the same while adding in a few little creature comforts for my own use.
 
-It could almost be called "suckless", but probably isn't. It was created for those focused on writing, not tinkering.
-
-You can learn more by reading the [official README](https://git.sr.ht/~bt/barf).
+You can learn more by reading the [README](https://github.com/sohalsdr/bliss).
 
 You can also view the generated [Atom feed here](/atom.xml)
-
-> **barf**
->
-> Blogs Are Really Fun
 
 ---

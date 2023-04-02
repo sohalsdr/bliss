@@ -1,6 +1,6 @@
 # Markdown Examples in barf
 
-2023-01-05
+2023-04-02
 
 This following was lifted from [https://github.com/karlb/smu](https://github.com/karlb/smu)
 
