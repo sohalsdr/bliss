@@ -24,7 +24,7 @@ index_html() {
 	while read -r f title created; do
 		link=$(echo "$f" | sed -E 's|.*/(.*).md|\1/|')
 		created=$(echo $(head -3 "$f" | tail -1))
-	 	echo "<span class='created'>$created &mdash; <a href=\"$link\">$title</a></span>"
+	 	echo "<span class='created'><small>$created</small><br><a href=\"$link\">$title</a></span>"
 	done < "$1" | sort -r
 
 	# Print footer after post list
