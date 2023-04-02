@@ -6,6 +6,6 @@
 
 You can learn more by reading the [README](https://github.com/sohalsdr/bliss).
 
-You can also view the generated [Atom feed here](/atom.xml)
+You can also view the generated [Atom feed here](./atom.xml)
 
 ---
