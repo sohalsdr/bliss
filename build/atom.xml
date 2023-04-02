@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>bliss</title>
 	<link href="https://sohalsdr.github.io/bliss/atom.xml" rel="self" />
-	<updated>2023-04-02T18:56:02Z</updated>
+	<updated>2023-04-02T19:16:08Z</updated>
 	<author>
 		<name>sohalsdr</name>
 	</author>
@@ -11,7 +11,7 @@
 		<title>Markdown Examples in bliss</title>
 		<content type="html">&lt;h1&gt;Markdown Examples in bliss&lt;/h1&gt;
 &lt;p&gt;2023-04-02&lt;/p&gt;
-&lt;p&gt;This following was lifted from &lt;a href=&quot;https://github.com/karlb/smu&quot;&gt;https://github.com/karlb/smu&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The following was lifted from &lt;a href=&quot;https://github.com/karlb/smu&quot;&gt;https://github.com/karlb/smu&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;&lt;code&gt;smu&lt;/code&gt; Syntax&lt;/h1&gt;
 &lt;p&gt;smu was started as a rewrite of
 &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;markdown&lt;/a&gt; but became something
