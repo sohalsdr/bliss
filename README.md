@@ -69,6 +69,24 @@ Changing this structure or date format will break things or require you to edit 
 
 ---
 
+## Deploying with GitHub Pages
+
+`bliss` is very easy to deploy to GitHub pages, and can be easily done without any need for Actions.
+
+First of all, build your site, as outlined in the [Basic Setup](#basic-setup) section above.
+
+Then, we can use `git subtree` to push the `build` folder to the `gh-pages` on our repo. This can be done with:
+
+```
+git subtree push --prefix build origin
+```
+
+Finally, go to your repository's setting, and ensure GitHub Pages is set to deploy from the `gh-pages` branch. 
+
+Make sure to run this whenever you make changes to your site.
+
+---
+
 ## FAQs
 
 ### How do I test locally?
@@ -91,3 +109,10 @@ But give [smu](https://git.sr.ht/~bt/smu) a try - it is very lightweight and fas
 ## Can this be run on MacOS?
 
 The upstream `barf` script has a [tutorial on setting up barf on MacOS](https://barf.bt.ht/macos). I haven't tested whether those work with `bliss`, but given the minimal modifications so far theres no reason it shouldn't
+
+---
+
+TODOs
+
+- [ ] Modify CSS to taste and in line with korayer's [RE; FERI](https://referi.de/)
+- [ ] Investigate creating a GitHub Action to automate builds
