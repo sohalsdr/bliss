@@ -116,3 +116,4 @@ TODOs
 
 - [ ] Modify CSS to taste and in line with korayer's [RE; FERI](https://referi.de/)
 - [ ] Investigate creating a GitHub Action to automate builds
+- [ ] Look at adding tag functionality of some kind
