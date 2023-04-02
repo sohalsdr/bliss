@@ -1,4 +1,4 @@
-# About `barf`
+# About `bliss`
 
 bliss is a moderately minimal blog generator, with a build script below 100 lines of shell. It's forked from Bradley Taunt's [barf](https://git.sr.ht/~bt/barf), and keeps things mostly the same while adding in a few little creature comforts for my own use.
 
