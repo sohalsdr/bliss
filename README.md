@@ -1,20 +1,8 @@
-# barf
+# bliss
 
-barf is an extremely minimal blog generator.
+**Bl**og **i**t **s**imple, **s**tupid!
 
-The entire build script is less than 100 lines of shell.
-
-It could *almost* be called "suckless", but probably isn't.
-
-(barf is a modified/forked version of Karl Bartel's fantastic [blog.sh](https://github.com/karlb/karl.berlin). Be sure to check it out since my version does things slightly different.)
-
-You can see a [live demo here](https://barf.bt.ht)
-
-## Why 'barf'?
-
-> **barf**
->
-> Blogs Are Really Fun
+`bliss` is a moderately minimal blog generator, with a build script below 100 lines of shell. It's forked from Bradley Taunt's [barf](https://git.sr.ht/~bt/barf), and keeps things mostly the same while adding in a few little creature comforts for my own use.
 
 ---
 
@@ -42,7 +30,7 @@ Clone this repo and navigate inside it. Edit the "header.html" and "footer.html"
 
 Be sure to edit the **RSS meta url** or else your feed won't validate!
 
-Then, clone and build my patched version of smu:
+Then, clone and build [Bradley Taunt's version of smu](https://git.sr.ht/~bt/smu):
 
 ```sh
 git clone https://git.sr.ht/~bt/smu
@@ -60,7 +48,7 @@ Your blog content will be in the `build` directory.
 
 Now you can delete the dummy posts/pages and start making your own!
 
-Media (such as images, videos) are placed in the "public" folder and carried over to the "build" folder via rsync. You can easily remove this altogether inside the main `barf` script if you plan to store media elsewhere (or not use any at all).
+Media (such as images, videos) are placed in the "public" folder and carried over to the "build" folder via rsync. You can easily remove this altogether inside the main `bliss` script if you plan to store media elsewhere (or not use any at all).
 
 ---
 
@@ -77,25 +65,7 @@ Like so:
 ```
 
 Changing this structure or date format will break things or require you to edit
-the `barf` script accordingly.
-
-## Projects Goals
-
-- The core focus should be to **reduce** the code of this project, not increase it. Overall scope needs to remain small.
-- Major tweaks/add-ons should be run by individuals via forks/patches - not put into the barf base
-
----
-
-## Submitting Patches
-
-Please use the official [mailing list](https://lists.sr.ht/~bt/barf) to submit
-your patches or bug fixes. Thanks!
-
----
-
-## Running on MacOS
-
-Please refer to the [main tutorial on setting up barf on MacOS](https://barf.bt.ht/macos)
+the `bliss` script accordingly.
 
 ---
 
@@ -110,18 +80,12 @@ make watch
 cd build && python3 -m http.server 3003
 ```
 
-### Do you plan to add "X"? Can *I* add "X"?
-
-Most likely not. I'm happy with how things are currently. If you want to add something - great! The point of this project is to give others the ability to fork it, tweak it, patch it, and share it as much as they'd like. The core of barf will remain minimal for this reason.
-
-Of course, any patches that can help *reduce* the project's footprint or even speed things up are more than welcome!
-
 ### Can I use other Markdown parsers?
 
-Of course! Simply edit the main `barf` script and swap out `smu` with something else. I wouldn't advise doing this if you already have pre-existing content based-off `smu`, since this could break some of your pages.
+Of course! Simply edit the main `bliss` script and swap out `smu` with something else. I wouldn't advise doing this if you already have pre-existing content based-off `smu`, since this could break some of your pages.
 
 But give [smu](https://git.sr.ht/~bt/smu) a try - it is very lightweight and fast!
 
-```
-MORE FAQs TO COME...
-```
+## Can this be run on MacOS?
+
+The upstream `barf` script has a [tutorial on setting up barf on MacOS](https://barf.bt.ht/macos). I haven't tested whether those work with `bliss`, but given the minimal modifications so far theres no reason it shouldn't
