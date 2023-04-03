@@ -108,7 +108,7 @@ But give [smu](https://git.sr.ht/~bt/smu) a try - it is very lightweight and fas
 
 ## Can this be run on MacOS?
 
-The upstream `barf` script has a [tutorial on setting up barf on MacOS](https://barf.bt.ht/macos). I haven't tested whether those work with `bliss`, but given the minimal modifications so far theres no reason it shouldn't
+The upstream `barf` script has a [tutorial for setting up barf on MacOS](https://barf.bt.ht/macos). I haven't tested whether those instructions work with `bliss`, but given the minimal modifications so far theres no reason it shouldn't
 
 ---
 
