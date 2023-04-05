@@ -78,7 +78,7 @@ First of all, build your site, as outlined in the [Basic Setup](#basic-setup) se
 Then, we can use `git subtree` to push the `build` folder to the `gh-pages` on our repo. This can be done with:
 
 ```
-git subtree push --prefix build origin
+git subtree push --prefix build origin gh-pages
 ```
 
 Finally, go to your repository's setting, and ensure GitHub Pages is set to deploy from the `gh-pages` branch. 
