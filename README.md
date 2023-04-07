@@ -52,7 +52,7 @@ Now you can delete the dummy posts/pages and start making your own!
 
 Media (such as images, videos) are placed in the `public` folder and carried over to the `docs` folder via rsync. You can easily remove this altogether inside the main `bliss` script if you plan to store media elsewhere (or not use any at all).
 
-**Important Note: `bliss`, as configured in this repository, expects to be served from `<domain>/bliss`. You will likely need to change some values in `index.html` if you're serving it from the root of your domain.
+**Important Note: `bliss`, as configured in this repository, expects to be served from `<domain>/bliss`. You will likely need to change some values in `index.html` if you're serving it from the root of your domain.**
 
 ---
 
