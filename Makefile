@@ -1,12 +1,12 @@
 # Builds the site by running bliss script then rsyncing the public directory and stylesheet
 build:
 	./bliss
-	rsync -r public/ build/public
-	rsync style.css build/style.css
+	rsync -r public/ docs/public
+	rsync style.css docs/style.css
 
 # Cleans up build directory
 clean:
-	rm -rf build/*
+	rm -rf docs/*
 
 # For testing locally, see README
 watch:

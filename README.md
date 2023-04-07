@@ -46,11 +46,13 @@ Then clone this directory and build:
 make build
 ```
 
-Your blog content will be in the `build` directory.
+Your blog content will be in the `docs` directory.
 
 Now you can delete the dummy posts/pages and start making your own!
 
-Media (such as images, videos) are placed in the `public` folder and carried over to the "build" folder via rsync. You can easily remove this altogether inside the main `bliss` script if you plan to store media elsewhere (or not use any at all).
+Media (such as images, videos) are placed in the `public` folder and carried over to the `docs` folder via rsync. You can easily remove this altogether inside the main `bliss` script if you plan to store media elsewhere (or not use any at all).
+
+**Important Note: `bliss`, as configured in this repository, expects to be served from `<domain>/bliss`. You will likely need to change some values in `index.html` if you're serving it from the root of your domain.
 
 ---
 
@@ -75,15 +77,7 @@ Changing this structure or date format will break things or require you to edit 
 
 First of all, build your site, as outlined in the [Basic Setup](#basic-setup) section above.
 
-Then, we can use `git subtree` to push the `build` folder to the `gh-pages` on our repo. This can be done with:
-
-```
-git subtree push --prefix build origin gh-pages
-```
-
-Finally, go to your repository's setting, and ensure GitHub Pages is set to deploy from the `gh-pages` branch. 
-
-Make sure to run this whenever you make changes to your site.
+As `bliss` builds to the `docs` folder of our repository by default, you can simply configure GitHub pages to serve the page from `/docs`. Now, every time you run `make build` and push to the main branch, the site is updated, no fancy Actions or CI setup needed!
 
 ---
 
@@ -95,7 +89,7 @@ Inside your project directory run:
 
 ```
 make watch
-cd build && python3 -m http.server 3003
+cd docs && python3 -m http.server 3003
 ```
 
 The VSCode [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) is also a useful tool for previewing pages.
@@ -114,6 +108,4 @@ The upstream `barf` script has a [tutorial for setting up barf on MacOS](https:/
 
 TODOs
 
-- [ ] Modify CSS to taste and in line with korayer's [RE; FERI](https://referi.de/)
-- [ ] Investigate creating a GitHub Action to automate builds
 - [ ] Look at adding tag functionality of some kind
