@@ -21,7 +21,7 @@
 
 - rsync
 - smu (see below)
-- entr (optonal)
+- entr (optional)
 - standard UNIX tools
 
 ---
